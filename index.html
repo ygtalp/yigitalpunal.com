@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yigit Alp Unal - Developer Portfolio | AI, Fintech/Banking & Blockchain</title>
+    <meta name="description" content="Software developer specializing in AI banking fraud detection, cryptocurrency trading bots, blockchain smart contracts, and fintech solutions.">
+    <meta name="keywords" content="Yigit Alp Unal, developer portfolio, AI fraud detection, cryptocurrency trading, blockchain, fintech, Python, machine learning">
+    <meta name="author" content="Yigit Alp Unal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yigitalpunal.com/">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yigitalpunal.com/">
+    <meta property="og:title" content="Yigit Alp Unal - Developer Portfolio">
+    <meta property="og:description" content="Explore my journey through AI banking systems, cryptocurrency trading, and blockchain development.">
+    <meta property="og:image" content="https://yigitalpunal.com/assets/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yigit Alp Unal - Developer Portfolio">
+    <meta name="twitter:description" content="Software developer specializing in AI, fintech/banking, and blockchain.">
+    <meta name="twitter:image" content="https://yigitalpunal.com/assets/twitter-card.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <!-- Markdown Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+
+    <!-- Syntax Highlighting -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YLB7TM33M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0YLB7TM33M');
+    </script>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Consolas, monospace;
+        }
+        
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.5;
+        }
+        
+        header {
+            background-color: #161b22;
+            color: #f0f6fc;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+                /* Personal Banner */
+                .personal-banner {
+            background-color: #1f2937;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-left: 3px solid #7ee787;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .banner-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .banner-content h1 {
+            font-size: 1.3rem;
+            color: #f0f6fc;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+        .banner-paragraph {
+            font-size: 0.95rem;
+            color: #c9d1d9;
+            margin-bottom: 1rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Tab Navigation */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+        
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            position: relative;
+            color: #8b949e;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab-btn.active {
+            color: #58a6ff;
+            border-bottom: 2px solid #58a6ff;
+        }
+        
+        .tab-btn:hover {
+            color: #58a6ff;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Timeline Styling */
+        #timeline-content {
+            margin-top: 50px;
+            text-align: center;  
+        }
+
+        #timeline-content h1 {
+            font-family: 'Consolas', monospace;
+            letter-spacing: 1.5px;
+            color: #f0f6fc;  
+            font-weight: 400;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            border-left: 4px solid #58a6ff;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;    
+            background: rgba(255, 255, 255, 0.03);
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Consolas', monospace;  
+            margin: 50px auto;  
+            letter-spacing: 0.5px;   
+            position: relative;
+            line-height: 1.4em;
+            font-size: 1em;   
+            padding: 50px;   
+            list-style: none;
+            text-align: left;  
+            font-weight: 100;  
+            max-width: 90%; 
+        }
+
+        .timeline h2, .timeline h3 {
+            font-family: 'Consolas', monospace;
+            letter-spacing: 1.5px;
+            font-weight: 400;
+            font-size: 1.2em;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+
+        .timeline .event {
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+            padding-bottom: 25px;
+            margin-bottom: 50px;  
+            position: relative;
+        }
+
+        .timeline .event:last-of-type { 
+            padding-bottom: 0;
+            margin-bottom: 0; 
+            border: none;      
+        }
+
+        .timeline .event:before, .timeline .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+
+        .timeline .event:before {
+            left: -217.5px;    
+            color: rgba(255, 255, 255, 0.6);    
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;    
+            font-size: 0.9em;
+            min-width: 120px;
+            font-family: 'Consolas', monospace;
+        }
+
+        .timeline .event:after {
+            box-shadow: 0 0 0 4px rgba(88, 166, 255, 1);    
+            left: -57.85px;        
+            background: #161b22;    
+            border-radius: 50%;  
+            height: 11px;
+            width: 11px;
+            content: "";
+            top: 5px;
+        }
+        
+        .timeline .event p {
+            margin: 10px 0;
+            color: #8b949e;
+        }
+        
+        .timeline .event .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin: 15px 0;
+        }
+        
+        .timeline .event .tech-tag {
+            background-color: #1f2937;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            color: #58a6ff;
+        }
+        
+        .timeline .event .impact {
+            border-left: 3px solid #7ee787;
+            padding-left: 10px;
+            margin-top: 15px;
+            color: #7ee787;
+            font-style: italic;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #58a6ff;
+            text-decoration: underline;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .project-link:hover {
+            color: #7ee787;
+        }
+
+        .project-link::after {
+            content: " \f35d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            margin-left: 0.3rem;
+            font-size: 0.75rem;
+        }
+
+        /* Show left labels only for first item with Current tag */
+        .timeline .event[data-date="Current"]:before {
+            color: #7ee787;
+            font-weight: bold;
+        }
+        
+        .timeline .event[data-date="Current"]:after {
+            box-shadow: 0 0 0 4px rgba(126, 231, 135, 1);
+        }
+        
+        /* Books Library Tab */
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 50px;
+        }
+        
+        .book-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            padding: 0.75rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-3px);
+            border-color: #58a6ff;
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 320px;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            background-color: #0d1117;
+        }
+
+        .book-title {
+            font-weight: 600;
+            color: #f0f6fc;
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+        
+        .book-author {
+            color: #8b949e;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .book-description {
+            font-size: 0.8rem;
+            color: #c9d1d9;
+            margin-bottom: 0.75rem;
+        }
+        
+        .book-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        
+        .book-tag {
+            background-color: #1f2937;
+            color: #58a6ff;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+        }
+        
+        /* Tools and Apps Tab */
+        .tools-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 50px;
+        }
+        
+        .tool-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            padding: 0.75rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tool-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+            color: #58a6ff;
+            background-color: #1f2937;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 10px;
+        }
+        
+        .tool-name {
+            font-weight: 600;
+            color: #f0f6fc;
+            font-size: 0.9rem;
+        }
+        
+        .tool-category {
+            margin-left: auto;
+            background-color: #1f2937;
+            color: #58a6ff;
+            font-size: 0.7rem;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+        }
+        
+        .tool-description {
+            font-size: 0.8rem;
+            color: #c9d1d9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tool-usage {
+            font-size: 0.75rem;
+            color: #8b949e;
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 0.75rem;
+            color: #8b949e;
+            margin-top: 2rem;
+            font-size: 0.7rem;
+            border-top: 1px solid #30363d;
+        }
+        
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                text-align: left;
+                border-left: 2px solid transparent;
+                border-bottom: none;
+            }
+            
+            .tab-btn.active {
+                border-left: 2px solid #58a6ff;
+                border-bottom: none;
+            }
+            
+            .books-grid,
+            .tools-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline {
+                padding: 30px 15px;
+                max-width: 95%;
+            }
+            
+            .timeline .event[data-date="Current"]:before {
+                position: relative;
+                display: block;
+                top: 0;
+                left: 0;
+                color: #7ee787;
+                text-align: left;
+                font-weight: bold;
+                font-size: 0.8em;
+                margin-bottom: 10px;
+            }
+            
+            .timeline .event[data-date="Current"]:after {
+                left: -43px;
+            }
+        }
+
+        /* Blog Styles */
+        .blog-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-3px);
+            border-color: #58a6ff;
+        }
+
+        .blog-date {
+            color: #8b949e;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-title {
+            color: #f0f6fc;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .blog-excerpt {
+            color: #c9d1d9;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Individual Post View */
+        #blog-post-view {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #back-to-blog-list {
+            background: none;
+            border: none;
+            color: #58a6ff;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding: 0.5rem 0;
+        }
+
+        #back-to-blog-list:hover {
+            text-decoration: underline;
+        }
+
+        .blog-post-header {
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .blog-post-header h1 {
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 1rem;
+        }
+
+        .post-meta {
+            display: flex;
+            gap: 1rem;
+            color: #8b949e;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+        }
+
+        .post-tag {
+            background-color: #1f2937;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            color: #58a6ff;
+        }
+
+        /* Blog Post Body */
+        .blog-post-body {
+            color: #c9d1d9;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .blog-post-body h1,
+        .blog-post-body h2,
+        .blog-post-body h3 {
+            color: #58a6ff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post-body p {
+            margin-bottom: 1rem;
+        }
+
+        .blog-post-body ul,
+        .blog-post-body ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post-body code {
+            background-color: #1f2937;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+            color: #7ee787;
+            font-size: 0.9em;
+        }
+
+        .blog-post-body pre {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .blog-post-body pre code {
+            background: none;
+            padding: 0;
+            color: #c9d1d9;
+        }
+
+        .blog-post-body img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin: 1.5rem 0;
+        }
+
+        .blog-post-body a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .blog-post-body a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: #7ee787;
+        }
+
+        .footer-text {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.75rem;
+            color: #6e7681;
+        }
+        .intro {
+            text-align: center;
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yigit Alp Unal",
+      "url": "https://yigitalpunal.com",
+      "jobTitle": "Back-End Software Developer",
+      "description": "Developer specializing in AI, fintech/banking, and blockchain",
+      "sameAs": [
+        "https://github.com/ygtalp",
+        "https://www.linkedin.com/in/yigit-alp-unal/"
+      ],
+      "knowsAbout": ["AI", "Machine Learning", "Blockchain", "Fintech", "Python", "Java", "microservices","back-end", "banking"]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="banner-content">
+            <h1>my dump—ideas, noise, and all.</h1>
+            <p>passions and experiments—raw scraps of creativity, fragments of projects, half-baked theories, and the spark of what’s coming next.</p>
+        </div>
+        
+
+    </header>
+    
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="projects">Projects Timeline</button>
+            <button class="tab-btn" data-tab="books">Coding Books Library</button>
+            <button class="tab-btn" data-tab="tools">Tools & Apps</button>
+            <button class="tab-btn" data-tab="blog">Blog</button>
+        </div>
+        
+        <!-- Projects Timeline Tab -->
+        <div class="tab-content active" id="projects">
+            <div class="intro">
+                <h2># Professional Project Portfolio</h2>
+                <p>This portfolio showcases enterprise-grade projects in banking systems, payment processing, fintech solutions, and financial data analysis. Each project demonstrates production-ready architecture and industry best practices for the European banking sector.</p>
+            </div>
+
+            <div id="timeline-content">
+                <ul class="timeline">
+                    <li class="event" data-date="Current">
+                        <h3>Banking Microservices Platform</h3>
+                        <p>Enterprise-grade banking platform with 12 microservices demonstrating production-ready architecture. Implements SEPA compliance (ISO 20022), AML/KYC screening, fraud detection with real-time risk scoring, and PSD2 regulatory compliance. Features event-driven architecture with Kafka, SAGA pattern for distributed transactions, and comprehensive observability with ELK stack, Prometheus, and Grafana.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java 17</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">SEPA</span>
+                            <span class="tech-tag">AML/KYC</span>
+                            <span class="tech-tag">Fraud Detection</span>
+                        </div>
+                        <a href="https://github.com/ygtalp/banking-microservices-platform" target="_blank" rel="noopener noreferrer" class="project-link">github.com/ygtalp/banking-microservices-platform</a>
+                        <p class="impact">Mastered enterprise microservices architecture, distributed transaction patterns, and European banking regulations. Demonstrated ability to build scalable, compliant banking systems with 80%+ test coverage and production-grade observability.</p>
+                    </li>
+
+                    <li class="event">
+                        <h3>Payment Processing Microservice</h3>
+                        <p>Production-ready payment processing service with multi-currency support (USD, EUR, GBP, TRY), idempotent transaction handling, and event-driven architecture. Implements optimistic locking for concurrent transaction safety, two-tier caching (Redis + database), complete audit trails, and asynchronous event publishing via RabbitMQ.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java 17</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">CQRS</span>
+                        </div>
+                        <a href="https://github.com/ygtalp/payment-service" target="_blank" rel="noopener noreferrer" class="project-link">github.com/ygtalp/payment-service</a>
+                        <p class="impact">Developed expertise in payment processing systems, data consistency patterns, and distributed system design. Implemented enterprise patterns including CQRS, event sourcing, and idempotency for reliable financial transactions.</p>
+                    </li>
+
+                    <li class="event">
+                        <h3>AI-Powered Fraud Detection System</h3>
+                        <p>Machine learning system for banking fraud detection with real-time transaction monitoring, anomaly identification, and pattern recognition. Implements risk scoring algorithms, behavioral analysis, and specialized context protocols for transaction security in banking environments.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Fraud Detection</span>
+                            <span class="tech-tag">Real-time Processing</span>
+                            <span class="tech-tag">Risk Scoring</span>
+                        </div>
+                        <p class="impact">Gained expertise in AI-driven security solutions for financial systems. Developed advanced pattern recognition skills and understanding of fraud prevention methodologies in banking sector.</p>
+                    </li>
+
+                    <li class="event">
+                        <h3>Financial Data Processing & Analytics</h3>
+                        <p>Real-time financial data processing pipelines with ETL workflows, market data aggregation, and advanced analytics. Implements data validation, transformation, and visualization for financial reporting and risk analysis.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Processing</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">Real-time</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                        <p class="impact">Developed strong data engineering skills with focus on financial data workflows. Enhanced ability to build scalable ETL pipelines and real-time processing systems for banking applications.</p>
+                    </li>
+
+                    <li class="event">
+                        <h3>Algorithmic Trading System</h3>
+                        <p>Automated trading system with technical analysis, algorithmic decision-making, and real-time market data integration. Features backtesting capabilities, strategy optimization, and API integration for financial market operations.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Algorithm Design</span>
+                            <span class="tech-tag">Financial Markets</span>
+                        </div>
+                        <p class="impact">Strengthened algorithmic thinking and API integration skills. Gained experience in building automated systems for financial markets with focus on reliability and data accuracy.</p>
+                    </li>
+                    
+                    <li class="event">
+                        <h3>Payment Gateway Integration Solutions</h3>
+                        <p>Enterprise payment gateway integrations with Stripe and major card networks (Visa/Mastercard). Developed secure payment processing plugins with PCI-DSS compliance, transaction handling, payment reconciliation, and comprehensive error handling for e-commerce and fintech applications.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Payment Processing</span>
+                            <span class="tech-tag">Stripe API</span>
+                            <span class="tech-tag">PCI-DSS</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Integration</span>
+                        </div>
+                        <p class="impact">Gained hands-on experience with payment gateway APIs, security compliance, and financial transaction workflows. Developed understanding of payment industry standards and secure transaction processing in production environments.</p>
+                    </li>
+
+                    <li class="event">
+                        <h3>Financial Market Data Integration</h3>
+                        <p>Real-time financial market data integration system with automated data collection, processing pipelines, and analysis workflows. Built scalable ETL infrastructure for market data aggregation, validation, and transformation supporting financial decision-making systems.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ETL Pipelines</span>
+                            <span class="tech-tag">Data Integration</span>
+                            <span class="tech-tag">Real-time Processing</span>
+                            <span class="tech-tag">Market Data</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <p class="impact">Developed advanced ETL and data pipeline engineering skills. Strengthened expertise in building scalable data integration systems for financial services with focus on data quality and real-time processing.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Coding Books Library Tab -->
+        <div class="tab-content" id="books">
+            <div class="intro">
+                <h2># Coding Books Library</h2>
+                <p>A collection of essential books that have enhanced my technical knowledge and contributed to my professional development in backend engineering, microservices architecture, and financial technology.</p>
+            </div>
+
+            <div class="books-grid">
+                <div class="book-card">
+                    <img src="books/Mark J. Price - Real-World Web Development with .NET 9 (2024).jpg" alt="Real-World Web Development with .NET 9" class="book-cover">
+                    <div class="book-title">Real-World Web Development with .NET 9</div>
+                    <div class="book-author">Mark J. Price</div>
+                    <div class="book-description">
+                        Modern web development with .NET 9, covering ASP.NET Core, Blazor, and cloud-native applications.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">.NET 9</span>
+                        <span class="book-tag">ASP.NET</span>
+                        <span class="book-tag">Web Development</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/C 13 and NET 9 – Modern Cross Platform Development Fundamentals Ninth Edition Mark J. Price.jpg" alt="C# 13 and .NET 9" class="book-cover">
+                    <div class="book-title">C# 13 and .NET 9 – Modern Cross Platform Development</div>
+                    <div class="book-author">Mark J. Price</div>
+                    <div class="book-description">
+                        Comprehensive guide to modern C# 13 and .NET 9 fundamentals for cross-platform development.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">C# 13</span>
+                        <span class="book-tag">.NET 9</span>
+                        <span class="book-tag">Cross-Platform</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/ASP.NET Core in Action, Third Edition (Andrew Lock).jpg" alt="ASP.NET Core in Action" class="book-cover">
+                    <div class="book-title">ASP.NET Core in Action, Third Edition</div>
+                    <div class="book-author">Andrew Lock</div>
+                    <div class="book-description">
+                        In-depth guide to building production-ready web applications with ASP.NET Core.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">ASP.NET Core</span>
+                        <span class="book-tag">Web APIs</span>
+                        <span class="book-tag">Backend</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Chris Richardson - Microservices Patterns_ With examples in Java-Manning Publications (2018).jpg" alt="Microservices Patterns" class="book-cover">
+                    <div class="book-title">Microservices Patterns</div>
+                    <div class="book-author">Chris Richardson</div>
+                    <div class="book-description">
+                        Comprehensive patterns for designing, building, and deploying microservices architectures with Java examples.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Microservices</span>
+                        <span class="book-tag">Java</span>
+                        <span class="book-tag">Architecture</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Sam Newman - Building Microservices_ Designing Fine-Grained Systems-O'Reilly Media (2021).jpg" alt="Building Microservices" class="book-cover">
+                    <div class="book-title">Building Microservices</div>
+                    <div class="book-author">Sam Newman</div>
+                    <div class="book-description">
+                        Designing fine-grained systems with microservices architecture, covering decomposition, deployment, and observability.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Microservices</span>
+                        <span class="book-tag">Architecture</span>
+                        <span class="book-tag">Distributed Systems</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Gang Of Four - Design Patterns, Elements Of Reusable Object Oriented Software-Addison-Wesley Professional.jpg" alt="Design Patterns" class="book-cover">
+                    <div class="book-title">Design Patterns</div>
+                    <div class="book-author">Gang of Four</div>
+                    <div class="book-description">
+                        Classic book on reusable object-oriented design patterns that form the foundation of software architecture.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Design Patterns</span>
+                        <span class="book-tag">OOP</span>
+                        <span class="book-tag">Architecture</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/AI for Big Data-Based Engineering Applications from Security Perspectives.jpg" alt="AI for Big Data" class="book-cover">
+                    <div class="book-title">AI for Big Data-Based Engineering Applications</div>
+                    <div class="book-author">Various Authors</div>
+                    <div class="book-description">
+                        Exploring AI applications in big data engineering with focus on security perspectives and practical implementations.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">AI</span>
+                        <span class="book-tag">Big Data</span>
+                        <span class="book-tag">Security</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).jpg" alt="AI Engineering" class="book-cover">
+                    <div class="book-title">AI Engineering</div>
+                    <div class="book-author">Chip Huyen</div>
+                    <div class="book-description">
+                        Building production-ready applications with foundation models, covering ML system design and deployment.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">AI</span>
+                        <span class="book-tag">ML Engineering</span>
+                        <span class="book-tag">Foundation Models</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Hands-On APIs For AI And Data Science. Using Python To Build And Use APIs For AI, Machine Learning, And Data Analytics ryan day.jpg" alt="Hands-On APIs" class="book-cover">
+                    <div class="book-title">Hands-On APIs For AI And Data Science</div>
+                    <div class="book-author">Ryan Day</div>
+                    <div class="book-description">
+                        Using Python to build and use APIs for AI, machine learning, and data analytics applications.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">APIs</span>
+                        <span class="book-tag">Python</span>
+                        <span class="book-tag">AI/ML</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Hands-On Machine Learning Aurélien Géron.jpg" alt="Hands-On Machine Learning" class="book-cover">
+                    <div class="book-title">Hands-On Machine Learning</div>
+                    <div class="book-author">Aurélien Géron</div>
+                    <div class="book-description">
+                        Practical implementation of machine learning algorithms with scikit-learn, Keras, and TensorFlow.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">ML</span>
+                        <span class="book-tag">TensorFlow</span>
+                        <span class="book-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Python for Finance Yves Hilpisch.jpg" alt="Python for Finance" class="book-cover">
+                    <div class="book-title">Python for Finance</div>
+                    <div class="book-author">Yves Hilpisch</div>
+                    <div class="book-description">
+                        Mastering data-driven finance with Python, covering financial algorithms, trading strategies, and risk management.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Python</span>
+                        <span class="book-tag">Finance</span>
+                        <span class="book-tag">Algorithms</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Mastering Blockchain Imran Bashir.jpg" alt="Mastering Blockchain" class="book-cover">
+                    <div class="book-title">Mastering Blockchain</div>
+                    <div class="book-author">Imran Bashir</div>
+                    <div class="book-description">
+                        Comprehensive guide on blockchain technology, distributed ledgers, and decentralized applications.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Blockchain</span>
+                        <span class="book-tag">Distributed Systems</span>
+                        <span class="book-tag">DLT</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Clean Code Robert C. Martin.jpg" alt="Clean Code" class="book-cover">
+                    <div class="book-title">Clean Code</div>
+                    <div class="book-author">Robert C. Martin</div>
+                    <div class="book-description">
+                        Principles, patterns, and practices of writing clean, maintainable code that stands the test of time.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Best Practices</span>
+                        <span class="book-tag">Software Design</span>
+                        <span class="book-tag">Refactoring</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/Building Algorithmic Trading Systems Kevin J. Davey.jpg" alt="Building Algorithmic Trading Systems" class="book-cover">
+                    <div class="book-title">Building Algorithmic Trading Systems</div>
+                    <div class="book-author">Kevin J. Davey</div>
+                    <div class="book-description">
+                        A trader's journey from data mining to Monte Carlo analysis and developing profitable trading systems.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Trading</span>
+                        <span class="book-tag">Algorithms</span>
+                        <span class="book-tag">Backtesting</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/java programlama dili yazilim tasarimi altug bilgin altintas.jpg" alt="Java Programlama Dili" class="book-cover">
+                    <div class="book-title">Java Programlama Dili ve Yazılım Tasarımı</div>
+                    <div class="book-author">Altuğ Bilgin Altıntaş</div>
+                    <div class="book-description">
+                        Comprehensive Java programming and software design principles in Turkish, covering object-oriented design and best practices.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Java</span>
+                        <span class="book-tag">Software Design</span>
+                        <span class="book-tag">OOP</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/java tasarim sablonlari ve yazilim mimarileri ozcan acar.jpg" alt="Java Tasarım Şablonları" class="book-cover">
+                    <div class="book-title">Java Tasarım Şablonları ve Yazılım Mimarileri</div>
+                    <div class="book-author">Özcan Acar</div>
+                    <div class="book-description">
+                        Design patterns and software architectures in Java, covering enterprise patterns and architectural best practices in Turkish.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">Java</span>
+                        <span class="book-tag">Design Patterns</span>
+                        <span class="book-tag">Architecture</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/postgresql yasin tatar ahmet fincan.jpg" alt="PostgreSQL" class="book-cover">
+                    <div class="book-title">PostgreSQL</div>
+                    <div class="book-author">Yasin Tatar, Ahmet Fincan</div>
+                    <div class="book-description">
+                        Comprehensive guide to PostgreSQL database management, query optimization, and advanced features in Turkish.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">PostgreSQL</span>
+                        <span class="book-tag">Database</span>
+                        <span class="book-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img src="books/c deitel tr palme.jpeg" alt="C Programlama" class="book-cover">
+                    <div class="book-title">C: How to Program</div>
+                    <div class="book-author">Paul Deitel, Harvey Deitel (Turkish Edition)</div>
+                    <div class="book-description">
+                        Classic introduction to C programming fundamentals, data structures, and low-level programming concepts.
+                    </div>
+                    <div class="book-tags">
+                        <span class="book-tag">C</span>
+                        <span class="book-tag">Programming</span>
+                        <span class="book-tag">Fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tools and Apps Tab -->
+        <div class="tab-content" id="tools">
+            <div class="intro">
+                <h2># Tools & Applications</h2>
+                <p>Professional development stack for building enterprise banking systems, microservices architectures, AI applications, and fintech solutions.</p>
+            </div>
+
+            <div class="tools-list">
+                <!-- Java Development -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">IJ</div>
+                        <div class="tool-name">IntelliJ IDEA</div>
+                        <div class="tool-category">IDE</div>
+                    </div>
+                    <div class="tool-description">
+                        Professional Java IDE with intelligent code assistance, advanced debugging, and integrated testing for enterprise applications.
+                    </div>
+                    <div class="tool-usage">
+                        Primary IDE for Java/Spring Boot microservices development and banking platform projects.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">SB</div>
+                        <div class="tool-name">Spring Boot</div>
+                        <div class="tool-category">Framework</div>
+                    </div>
+                    <div class="tool-description">
+                        Java framework for building production-ready microservices with embedded servers, auto-configuration, and comprehensive ecosystem.
+                    </div>
+                    <div class="tool-usage">
+                        Core framework for building all banking microservices, payment processing, and REST APIs.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">SC</div>
+                        <div class="tool-name">Spring Cloud</div>
+                        <div class="tool-category">Microservices</div>
+                    </div>
+                    <div class="tool-description">
+                        Distributed system patterns for microservices including service discovery, config management, and circuit breakers.
+                    </div>
+                    <div class="tool-usage">
+                        Used for implementing service discovery (Eureka), API Gateway, and distributed configuration in microservices platform.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">MV</div>
+                        <div class="tool-name">Maven</div>
+                        <div class="tool-category">Build Tool</div>
+                    </div>
+                    <div class="tool-description">
+                        Project management and build automation tool for Java projects with dependency management and lifecycle management.
+                    </div>
+                    <div class="tool-usage">
+                        Used for managing dependencies, building multi-module projects, and automating deployment pipelines.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">TV</div>
+                        <div class="tool-name">TradingView</div>
+                        <div class="tool-category">Trading</div>
+                    </div>
+                    <div class="tool-description">
+                        Charting platform and social network for traders and investors with Pine Script support.
+                    </div>
+                    <div class="tool-usage">
+                        Used for technical analysis, strategy backtesting, and Pine Script development.
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">ST</div>
+                        <div class="tool-name">Stripe Dashboard</div>
+                        <div class="tool-category">Payment</div>
+                    </div>
+                    <div class="tool-description">
+                        Web interface for managing Stripe payment processing, customers, and transactions.
+                    </div>
+                    <div class="tool-usage">
+                        Used for monitoring and managing payment integrations and transaction flows.
+                    </div>
+                </div>
+
+
+                <!-- Databases -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">PG</div>
+                        <div class="tool-name">PostgreSQL</div>
+                        <div class="tool-category">Database</div>
+                    </div>
+                    <div class="tool-description">
+                        Advanced open-source relational database with ACID compliance, complex queries, and excellent performance for financial data.
+                    </div>
+                    <div class="tool-usage">
+                        Primary database for banking transactions, customer data, and payment records with strong consistency guarantees.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">RD</div>
+                        <div class="tool-name">Redis</div>
+                        <div class="tool-category">Cache</div>
+                    </div>
+                    <div class="tool-description">
+                        In-memory data structure store used as cache, message broker, and session store with sub-millisecond latency.
+                    </div>
+                    <div class="tool-usage">
+                        Used for caching frequently accessed data, session management, and rate limiting in banking microservices.
+                    </div>
+                </div>
+
+                <!-- Message Queues -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">KF</div>
+                        <div class="tool-name">Apache Kafka</div>
+                        <div class="tool-category">Message Queue</div>
+                    </div>
+                    <div class="tool-description">
+                        Distributed event streaming platform for high-throughput, fault-tolerant message processing and event-driven architectures.
+                    </div>
+                    <div class="tool-usage">
+                        Core messaging infrastructure for event-driven banking platform, SAGA orchestration, and audit logging.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">RB</div>
+                        <div class="tool-name">RabbitMQ</div>
+                        <div class="tool-category">Message Queue</div>
+                    </div>
+                    <div class="tool-description">
+                        Message broker supporting multiple messaging protocols with reliable message delivery and flexible routing.
+                    </div>
+                    <div class="tool-usage">
+                        Used for asynchronous payment processing, notification services, and inter-service communication.
+                    </div>
+                </div>
+
+                <!-- Observability -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">PR</div>
+                        <div class="tool-name">Prometheus</div>
+                        <div class="tool-category">Monitoring</div>
+                    </div>
+                    <div class="tool-description">
+                        Open-source monitoring and alerting toolkit with time-series database for metrics collection and analysis.
+                    </div>
+                    <div class="tool-usage">
+                        Monitoring microservices performance, JVM metrics, database connections, and system health indicators.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">GR</div>
+                        <div class="tool-name">Grafana</div>
+                        <div class="tool-category">Visualization</div>
+                    </div>
+                    <div class="tool-description">
+                        Analytics and interactive visualization platform for creating dashboards from time-series data.
+                    </div>
+                    <div class="tool-usage">
+                        Building real-time dashboards for monitoring banking platform metrics, transaction volumes, and system performance.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">ELK</div>
+                        <div class="tool-name">ELK Stack</div>
+                        <div class="tool-category">Logging</div>
+                    </div>
+                    <div class="tool-description">
+                        Elasticsearch, Logstash, Kibana stack for centralized logging, log analysis, and search across distributed systems.
+                    </div>
+                    <div class="tool-usage">
+                        Centralized logging for all microservices, transaction tracking, and debugging distributed system issues.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">ZP</div>
+                        <div class="tool-name">Zipkin</div>
+                        <div class="tool-category">Tracing</div>
+                    </div>
+                    <div class="tool-description">
+                        Distributed tracing system for tracking requests across microservices and identifying performance bottlenecks.
+                    </div>
+                    <div class="tool-usage">
+                        Tracking payment transactions across multiple services and analyzing latency in distributed workflows.
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">D</div>
+                        <div class="tool-name">Docker</div>
+                        <div class="tool-category">Containerization</div>
+                    </div>
+                    <div class="tool-description">
+                        Platform for developing, shipping, and running applications in isolated containers with consistent environments.
+                    </div>
+                    <div class="tool-usage">
+                        Containerizing all microservices for consistent deployment across development, staging, and production environments.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">K8</div>
+                        <div class="tool-name">Kubernetes</div>
+                        <div class="tool-category">Orchestration</div>
+                    </div>
+                    <div class="tool-description">
+                        Container orchestration platform for automating deployment, scaling, and management of containerized applications.
+                    </div>
+                    <div class="tool-usage">
+                        Orchestrating banking microservices deployment with auto-scaling, load balancing, and self-healing capabilities.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">GH</div>
+                        <div class="tool-name">GitHub Actions</div>
+                        <div class="tool-category">CI/CD</div>
+                    </div>
+                    <div class="tool-description">
+                        Automation platform for building CI/CD pipelines directly integrated with GitHub repositories.
+                    </div>
+                    <div class="tool-usage">
+                        Automating testing, building Docker images, and deploying microservices to Kubernetes clusters.
+                    </div>
+                </div>
+
+                <!-- API Development -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">PM</div>
+                        <div class="tool-name">Postman</div>
+                        <div class="tool-category">API Testing</div>
+                    </div>
+                    <div class="tool-description">
+                        API development and testing platform for designing, testing, documenting, and monitoring REST APIs.
+                    </div>
+                    <div class="tool-usage">
+                        Testing banking APIs, payment endpoints, and microservices integration with automated test collections.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">SW</div>
+                        <div class="tool-name">Swagger/OpenAPI</div>
+                        <div class="tool-category">API Documentation</div>
+                    </div>
+                    <div class="tool-description">
+                        API specification standard and tooling for designing, documenting, and generating REST API clients.
+                    </div>
+                    <div class="tool-usage">
+                        Documenting banking microservices APIs with interactive documentation and automated client generation.
+                    </div>
+                </div>
+
+                <!-- AI/ML Tools -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">PC</div>
+                        <div class="tool-name">PyCharm</div>
+                        <div class="tool-category">IDE</div>
+                    </div>
+                    <div class="tool-description">
+                        Professional Python IDE with advanced code assistance, debugging, and integrated testing for data science and AI projects.
+                    </div>
+                    <div class="tool-usage">
+                        Development environment for AI fraud detection systems, ML models, and Python-based data processing pipelines.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">LC</div>
+                        <div class="tool-name">LangChain</div>
+                        <div class="tool-category">AI Framework</div>
+                    </div>
+                    <div class="tool-description">
+                        Framework for building applications with large language models, supporting chains, agents, and memory.
+                    </div>
+                    <div class="tool-usage">
+                        Building RAG systems for financial document analysis, customer support chatbots, and intelligent data retrieval.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">PN</div>
+                        <div class="tool-name">Pinecone</div>
+                        <div class="tool-category">Vector DB</div>
+                    </div>
+                    <div class="tool-description">
+                        Vector database for semantic search and similarity matching with high-performance indexing for AI applications.
+                    </div>
+                    <div class="tool-usage">
+                        Storing and querying embeddings for RAG systems, document similarity search, and fraud pattern matching.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">CD</div>
+                        <div class="tool-name">ChromaDB</div>
+                        <div class="tool-category">Vector DB</div>
+                    </div>
+                    <div class="tool-description">
+                        Open-source embedding database for building AI applications with semantic search capabilities.
+                    </div>
+                    <div class="tool-usage">
+                        Local vector storage for development and testing of RAG systems and semantic search features.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">TF</div>
+                        <div class="tool-name">TensorFlow</div>
+                        <div class="tool-category">ML Framework</div>
+                    </div>
+                    <div class="tool-description">
+                        End-to-end open-source platform for machine learning with comprehensive ecosystem for model development and deployment.
+                    </div>
+                    <div class="tool-usage">
+                        Building and training fraud detection models, transaction anomaly detection, and risk assessment systems.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">PA</div>
+                        <div class="tool-name">Pandas</div>
+                        <div class="tool-category">Data Analysis</div>
+                    </div>
+                    <div class="tool-description">
+                        Python library for data manipulation and analysis with DataFrame objects for structured data processing.
+                    </div>
+                    <div class="tool-usage">
+                        Processing financial data, transaction analysis, feature engineering for ML models, and data preprocessing.
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">JN</div>
+                        <div class="tool-name">Jupyter Notebooks</div>
+                        <div class="tool-category">Data Science</div>
+                    </div>
+                    <div class="tool-description">
+                        Interactive computing platform for exploratory data analysis, visualization, and sharing analytical workflows.
+                    </div>
+                    <div class="tool-usage">
+                        Exploratory analysis of transaction data, prototyping ML models, and creating shareable financial reports.
+                    </div>
+                </div>
+
+                <!-- Version Control -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">G</div>
+                        <div class="tool-name">Git & GitHub</div>
+                        <div class="tool-category">Version Control</div>
+                    </div>
+                    <div class="tool-description">
+                        Distributed version control system for tracking code changes, collaboration, and managing project history.
+                    </div>
+                    <div class="tool-usage">
+                        Version control for all microservices, infrastructure as code, and collaborative development workflows.
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">VS</div>
+                        <div class="tool-name">Visual Studio Code</div>
+                        <div class="tool-category">Editor</div>
+                    </div>
+                    <div class="tool-description">
+                        Lightweight, extensible code editor with support for multiple languages, debugging, and rich extension ecosystem.
+                    </div>
+                    <div class="tool-usage">
+                        Secondary editor for YAML configurations, Docker files, shell scripts, and markdown documentation.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Tab -->
+        <div class="tab-content" id="blog">
+            <!-- Blog list view -->
+            <div id="blog-list-view">
+                <div class="intro">
+                    <h2># Blog</h2>
+                    <p>Thoughts and experiments from my development journey.</p>
+                </div>
+                <div class="blog-posts-grid" id="blog-posts-container">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Single post view -->
+            <div id="blog-post-view" style="display: none;">
+                <button id="back-to-blog-list">← Back to Blog</button>
+                <article id="blog-post-content"></article>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/ygtalp" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/yigit-alp-unal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    LinkedIn
+                </a>
+            </div>
+            <p class="footer-copyright">
+                © 2026 Yigit Alp Unal. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+    <script>
+        // Tab Navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to current button and content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+
+        // Blog System
+        const blogSystem = {
+            posts: [],
+            cache: new Map(),
+
+            // Load blog index
+            async init() {
+                try {
+                    const response = await fetch('blog/blog-index.json');
+                    const data = await response.json();
+                    this.posts = data.posts.sort((a, b) =>
+                        new Date(b.date) - new Date(a.date)
+                    );
+                    this.renderBlogList();
+                    this.handleRouting();
+                } catch (error) {
+                    console.error('Error loading blog index:', error);
+                    document.getElementById('blog-posts-container').innerHTML =
+                        '<p style="color: #8b949e;">Blog posts coming soon...</p>';
+                }
+            },
+
+            // Render blog list
+            renderBlogList() {
+                const container = document.getElementById('blog-posts-container');
+                container.innerHTML = this.posts.map(post => `
+                    <div class="blog-card" onclick="blogSystem.showPost('${post.slug}')">
+                        <div class="blog-date">${this.formatDate(post.date)}</div>
+                        <h3 class="blog-title">${post.title}</h3>
+                        <p class="blog-excerpt">${post.excerpt}</p>
+                        <div class="post-tags">
+                            ${post.tags.map(tag => `<span class="post-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                `).join('');
+            },
+
+            // Load and show individual post
+            async showPost(slug) {
+                // Check cache first
+                if (this.cache.has(slug)) {
+                    this.renderPost(this.cache.get(slug));
+                    return;
+                }
+
+                const post = this.posts.find(p => p.slug === slug);
+                if (!post) {
+                    this.show404();
+                    return;
+                }
+
+                try {
+                    const response = await fetch(post.file);
+                    const markdown = await response.text();
+                    const { frontmatter, content } = this.extractFrontmatter(markdown);
+                    const html = marked.parse(content);
+
+                    const fullPost = { ...post, html };
+                    this.cache.set(slug, fullPost);
+                    this.renderPost(fullPost);
+                } catch (error) {
+                    console.error('Error loading post:', error);
+                    this.show404();
+                }
+            },
+
+            // Render individual post
+            renderPost(post) {
+                document.getElementById('blog-list-view').style.display = 'none';
+                document.getElementById('blog-post-view').style.display = 'block';
+
+                document.getElementById('blog-post-content').innerHTML = `
+                    <header class="blog-post-header">
+                        <h1>${post.title}</h1>
+                        <div class="post-meta">
+                            <span>${this.formatDate(post.date)}</span>
+                            <span>${post.author}</span>
+                        </div>
+                        <div class="post-tags">
+                            ${post.tags.map(tag => `<span class="post-tag">${tag}</span>`).join('')}
+                        </div>
+                    </header>
+                    <div class="blog-post-body">${post.html}</div>
+                `;
+
+                // Highlight code blocks
+                if (typeof Prism !== 'undefined') {
+                    Prism.highlightAll();
+                }
+
+                // Update URL
+                window.location.hash = `blog/post/${post.slug}`;
+
+                // Update meta tags for SEO
+                this.updateMetaTags(post);
+            },
+
+            // Extract YAML frontmatter
+            extractFrontmatter(markdown) {
+                const regex = /^---\n([\s\S]+?)\n---\n([\s\S]*)$/;
+                const match = markdown.match(regex);
+                if (!match) return { frontmatter: {}, content: markdown };
+
+                const frontmatter = {};
+                match[1].split('\n').forEach(line => {
+                    const [key, ...valueParts] = line.split(':');
+                    if (key && valueParts.length) {
+                        let value = valueParts.join(':').trim();
+                        value = value.replace(/^["']|["']$/g, '');
+                        if (value.startsWith('[')) {
+                            value = JSON.parse(value.replace(/'/g, '"'));
+                        }
+                        frontmatter[key.trim()] = value;
+                    }
+                });
+
+                return { frontmatter, content: match[2] };
+            },
+
+            // Update meta tags for sharing
+            updateMetaTags(post) {
+                document.title = `${post.title} - Yigit Alp Unal`;
+                this.setMetaTag('description', post.excerpt);
+                this.setMetaTag('og:title', post.title, 'property');
+                this.setMetaTag('og:description', post.excerpt, 'property');
+                this.setMetaTag('twitter:title', post.title);
+                this.setMetaTag('twitter:description', post.excerpt);
+            },
+
+            setMetaTag(name, content, attr = 'name') {
+                let element = document.querySelector(`meta[${attr}="${name}"]`);
+                if (!element) {
+                    element = document.createElement('meta');
+                    element.setAttribute(attr, name);
+                    document.head.appendChild(element);
+                }
+                element.setAttribute('content', content);
+            },
+
+            // Format date
+            formatDate(dateStr) {
+                return new Date(dateStr).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            },
+
+            // Handle URL routing
+            handleRouting() {
+                const hash = window.location.hash;
+                if (hash.startsWith('#blog/post/')) {
+                    const slug = hash.replace('#blog/post/', '');
+                    document.querySelector('[data-tab="blog"]').click();
+                    this.showPost(slug);
+                }
+            },
+
+            show404() {
+                document.getElementById('blog-post-content').innerHTML = `
+                    <div class="error-message">
+                        <h2>Post Not Found</h2>
+                        <p>The blog post you're looking for doesn't exist.</p>
+                    </div>
+                `;
+            }
+        };
+
+        // Back to blog list button
+        document.getElementById('back-to-blog-list').addEventListener('click', () => {
+            document.getElementById('blog-list-view').style.display = 'block';
+            document.getElementById('blog-post-view').style.display = 'none';
+            window.location.hash = 'blog';
+            document.title = 'Yigit Alp Unal - Developer Portfolio | AI, Fintech/Banking & Blockchain';
+        });
+
+        // Initialize blog on page load
+        window.addEventListener('hashchange', () => blogSystem.handleRouting());
+        document.addEventListener('DOMContentLoaded', () => {
+            blogSystem.init();
+        });
+    </script>
+</body>
+</html>

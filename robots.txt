@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yigitalpunal.com/sitemap.xml
+
+# Disallow session logs if you don't want them indexed
+User-agent: *
+Disallow: /session_log/

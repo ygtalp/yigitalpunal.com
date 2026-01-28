@@ -1,0 +1,18 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ##
+claude.md
+session_log/
+session_log/**.**
+
+# Temp
+*.tmp
+*.log

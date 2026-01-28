@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "slug": "welcome-to-my-portfolio",
+      "title": "Welcome to My Portfolio Blog",
+      "date": "2026-01-28",
+      "author": "Yigit Alp Unal",
+      "tags": ["introduction", "portfolio", "backend-development", "banking", "fintech"],
+      "excerpt": "Welcome to my portfolio blog where I share insights and learnings from my development journey in enterprise banking systems, fintech, and microservices architecture.",
+      "file": "blog/posts/2026-01-28-welcome-to-my-portfolio.md"
+    }
+  ]
+}
