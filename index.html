@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yigit Alp Unal — Senior Backend Engineer | Payments, Oracle, Kafka, Agentic Systems</title>
+<meta name="description" content="Senior Backend Engineer and Project Lead with 9+ years building production banking systems: SWIFT and SEPA payments, daily reconciliation, Oracle PL/SQL, Kafka. Author of rawthink-mcp, an open-source MCP server. Relocating to the Netherlands.">
+<meta property="og:title" content="Yigit Alp Unal — Senior Backend Engineer">
+<meta property="og:description" content="Nine years building financial systems where being wrong is not an option. Payments, reconciliation, and the agentic tooling I build on top.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://yigitalpunal.com/">
+<meta property="og:url" content="https://yigitalpunal.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yigitalpunal.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yigit Alp Unal — Senior Backend Engineer, Project Lead">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yigit Alp Unal — Senior Backend Engineer">
+<meta name="twitter:description" content="Nine years building financial systems where being wrong is not an option. Payments, reconciliation, and the agentic tooling I build on top.">
+<meta name="twitter:image" content="https://yigitalpunal.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://yigitalpunal.com/#person",
+  "name": "Yigit Alp Unal",
+  "alternateName": "Yiğit Alp Ünal",
+  "url": "https://yigitalpunal.com",
+  "image": "https://yigitalpunal.com/avatar.jpg",
+  "email": "mailto:unal.yigitalp@gmail.com",
+  "jobTitle": "Senior Backend Engineer",
+  "description": "Senior Backend Engineer and Project Lead with 9+ years building production banking systems: SWIFT and SEPA payments, daily reconciliation, Oracle PL/SQL, and Kafka. Author of rawthink-mcp, an open-source MCP server.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Anadolubank",
+    "url": "https://www.anadolubank.com.tr"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Eskişehir Osmangazi University"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Istanbul",
+    "addressCountry": "TR"
+  },
+  "knowsLanguage": [
+    "tr",
+    "en"
+  ],
+  "sameAs": [
+    "https://github.com/ygtalp",
+    "https://www.linkedin.com/in/yigitaunal",
+    "https://dev.to/yigitaunal",
+    "https://x.com/yigitaunal",
+    "https://pypi.org/project/rawthink-mcp/"
+  ],
+  "knowsAbout": [
+    "Payment systems",
+    "SWIFT",
+    "SEPA",
+    "ISO 20022",
+    "Reconciliation",
+    "Core banking",
+    "Java",
+    "Spring Boot",
+    "Oracle PL/SQL",
+    "Apache Kafka",
+    "Event-driven architecture",
+    "Microservices",
+    "Idempotency",
+    "AML/CFT compliance",
+    "PCI-DSS",
+    "Model Context Protocol (MCP)",
+    "Retrieval-augmented generation"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --foreground:       #09090b;
+    --muted-foreground: #71717a;
+    --gray-500:         #6b7280;
+    --background:       #ffffff;
+    --secondary:        #f4f4f5;
+    --secondary-fg:     #18181b;
+    --border:           #e4e4e7;
+    --accent:           #f4f4f5;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+
+  html{ color-scheme:light; }
+
+  body{
+    margin:0;
+    background:var(--background);
+    color:var(--foreground);
+    font-family:"Inter", system-ui, -apple-system, sans-serif;
+    font-size:16px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{ font-family:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  main{ margin-inline:auto; padding:1rem; }
+  @media (min-width:768px){ main{ padding:4rem; } }
+
+  .page{
+    margin-inline:auto;
+    width:100%;
+    max-width:42rem;           /* max-w-2xl — the whole discipline */
+    display:flex;
+    flex-direction:column;
+    gap:2rem;                  /* space-y-8 */
+  }
+
+  a{ color:inherit; }
+  a.underline-hover{ text-decoration:none; }
+  a.underline-hover:hover{ text-decoration:underline; }
+  a:focus-visible,button:focus-visible{ outline:2px solid var(--foreground); outline-offset:2px; border-radius:4px; }
+
+  /* ── Hero ── */
+  .hero{ display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:1.5rem; }
+  .hero-left{ flex:1; display:flex; flex-direction:column; gap:.375rem; min-width:0; }
+  .hero h1{ font-size:1.5rem; font-weight:700; line-height:1.2; margin:0; }
+  .tagline{
+    margin:0; max-width:28rem;
+    font-size:.875rem;
+    color:var(--muted-foreground);
+    text-wrap:pretty;
+  }
+
+  .pill{
+    display:inline-flex; align-items:center; gap:.375rem;
+    font-size:.75rem; color:var(--muted-foreground);
+  }
+  .ping{ position:relative; display:flex; width:8px; height:8px; flex-shrink:0; }
+  .ping i{
+    position:absolute; inset:0; border-radius:50%;
+    background:#4ade80; opacity:.75;
+    animation:ping 1.4s cubic-bezier(0,0,.2,1) infinite;
+  }
+  .ping b{ position:relative; width:8px; height:8px; border-radius:50%; background:#22c55e; }
+  @keyframes ping{ 75%,100%{ transform:scale(2); opacity:0; } }
+  @media (prefers-reduced-motion:reduce){ .ping i{ animation:none; } }
+
+  /* ── Availability tooltip: CSS-only, opens on hover and keyboard focus ── */
+  .pill-wrap{ position:relative; display:inline-flex; width:max-content; }
+  .pill{ cursor:default; }
+
+  .tip{
+    position:absolute;
+    top:calc(100% + 5px);
+    left:0;
+    z-index:20;
+    width:16rem;
+    padding:.75rem .875rem;
+    background:var(--background);
+    border:1px solid var(--border);
+    border-radius:8px;
+    box-shadow:0 4px 6px -1px rgb(0 0 0 / .07), 0 2px 4px -2px rgb(0 0 0 / .07);
+    opacity:0;
+    transform:translateY(-4px) scale(.97);
+    transform-origin:top left;
+    pointer-events:none;
+    transition:opacity .15s ease, transform .15s ease;
+  }
+  .tip-title{ font-size:.8125rem; font-weight:600; color:var(--foreground); margin:0 0 .25rem; }
+  .tip-body{ font-size:.75rem; color:var(--muted-foreground); margin:0; line-height:1.5; }
+
+  .pill-wrap:hover .tip,
+  .pill-wrap:focus-within .tip{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+  @media (prefers-reduced-motion:reduce){
+    .tip{ transition:opacity .15s ease; transform:none; }
+    .pill-wrap:hover .tip,
+    .pill-wrap:focus-within .tip{ transform:none; }
+  }
+  @media (max-width:480px){ .tip{ width:15rem; } }
+
+  .loc{
+    display:inline-flex; align-items:center; gap:.375rem;
+    font-size:.75rem; color:var(--muted-foreground);
+    text-decoration:none;
+  }
+  .loc:hover{ text-decoration:underline; }
+  .loc svg{ width:12px; height:12px; }
+
+  .socials{ display:flex; gap:.25rem; padding-top:.25rem; }
+  .icon-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:32px; height:32px;
+    border:1px solid var(--border);
+    border-radius:6px;
+    background:var(--background);
+    color:var(--foreground);
+    transition:background-color .15s ease;
+  }
+  .icon-btn:hover{ background:var(--accent); }
+  .icon-btn svg{ width:16px; height:16px; }
+
+  .avatar{
+    width:112px; height:112px;
+    /* Sekil ayari: 50% = daire | 12px = yuvarlak kose | 0 = kare */
+    border-radius:12px;
+    object-fit:cover;
+    flex-shrink:0;
+    border:1px solid var(--border);
+  }
+  @media (max-width:640px){ .avatar{ width:80px; height:80px; } }
+
+  /* ── Sections ── */
+  section{ display:flex; flex-direction:column; gap:.75rem; }
+  h2{ font-size:1.25rem; font-weight:700; margin:0; }
+  .about{ font-size:.875rem; color:var(--muted-foreground); margin:0; text-wrap:pretty; }
+
+  /* ── Entry: used for BOTH work and projects. Flat. No borders. ── */
+  .entry{ display:flex; flex-direction:column; }
+  .entry-head{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:.5rem;
+  }
+  .entry-title{
+    display:inline-flex; align-items:center; gap:.375rem;
+    font-size:1rem; font-weight:600; line-height:1;
+    margin:0;
+    flex-wrap:wrap;
+  }
+  .entry-date{
+    font-size:.875rem;
+    color:var(--gray-500);
+    font-variant-numeric:tabular-nums;
+    white-space:nowrap;
+  }
+  .entry-sub{
+    font-size:.875rem; line-height:1;
+    margin:.375rem 0 0;
+    font-weight:400;
+  }
+  .entry-body{ margin-top:.5rem; font-size:.75rem; color:var(--muted-foreground); }
+  .entry-body p{ margin:0 0 .5rem; }
+  .entry-body ul{ margin:0; padding-left:1.1rem; list-style:disc; }
+  .entry-body li{ margin-bottom:.25rem; }
+
+  /* ── Badges / chips ── */
+  .badge{
+    display:inline-flex; align-items:center;
+    border:1px solid transparent; border-radius:6px;
+    background:var(--secondary); color:var(--secondary-fg);
+    font-weight:600; white-space:nowrap;
+  }
+  .badge-lg{ font-size:.75rem; padding:.125rem .5rem; }
+  .badge-sm{ font-size:.625rem; padding:0 .25rem; }
+  .chips{ display:flex; flex-wrap:wrap; gap:.25rem; margin-top:.25rem; }
+
+  .repo{ font-size:.75rem; color:var(--gray-500); font-variant-numeric:tabular-nums; white-space:nowrap; }
+
+  /* ── Contact ── */
+  .contact{ align-items:center; text-align:center; gap:.75rem; padding-top:.5rem; }
+  .contact h2{ font-size:1.875rem; letter-spacing:-.02em; }
+  .contact p{ margin:0; font-size:.875rem; color:var(--muted-foreground); max-width:28rem; }
+  .contact a{ text-decoration:underline; text-underline-offset:2px; }
+</style>
+</head>
+<body>
+<main>
+<div class="page">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Yigit Alp Unal</h1>
+      <p class="tagline mono">Senior Backend Engineer with 9+ YoE building banking payment systems. I also build developer tooling for AI coding agents.</p>
+
+      <span class="pill-wrap">
+        <span class="pill mono" tabindex="0" aria-describedby="availability">
+          <span class="ping"><i></i><b></b></span>
+          Open to new opportunities
+        </span>
+        <span class="tip" id="availability" role="tooltip">
+          <p class="tip-title">Senior / Staff Backend Engineer</p>
+          <p class="tip-body mono">Payments, core banking, and platform engineering. Available within 4–6 weeks of an offer.</p>
+        </span>
+      </span>
+
+      <a class="loc mono" href="https://www.google.com/maps/place/Amsterdam/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        Istanbul → Amsterdam</a>
+
+      <div class="socials">
+        <a class="icon-btn" href="mailto:unal.yigitalp@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/ygtalp" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a class="icon-btn" href="https://linkedin.com/in/yigitaunal" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1 0-4.122 2.062 2.062 0 0 1 0 4.122zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://x.com/yigitaunal" aria-label="X" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://dev.to/yigitaunal" aria-label="dev.to" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525zM19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.472c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3zM9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899zm4.045-3.562H11.14v1.544h1.283v1.188H11.14v1.543h2.1v1.188H10.86a.888.888 0 0 1-.9-.874V9.529a.889.889 0 0 1 .874-.9h2.406zm4.049 4.755c-.531 1.235-1.481.99-1.906 0l-1.548-5.951h1.309l1.193 4.567 1.188-4.567h1.31z"/></svg>
+        </a>
+      </div>
+    </div>
+    <img class="avatar" src="avatar.jpg" alt="Yigit Alp Unal">
+  </section>
+
+  <!-- About -->
+  <section>
+    <h2>About</h2>
+    <p class="about mono">Senior Backend Engineer and Project Lead with 9+ years building production banking systems for Turkey's leading banks. I own payments infrastructure: bulk SWIFT transfers, corporate file exchange, and a 40+ biller collections domain with direct debit and daily reconciliation. Most of my work lives on the seam where an Oracle accounting core meets modern event-driven services. Alongside that, I build developer tooling for AI coding agents — I'm the author of rawthink-mcp, an open-source MCP server that gives them persistent memory across sessions. Primary stack: Java 21, Spring Boot, Oracle PL/SQL, Kafka, .NET Core.</p>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <span>Anadolubank</span>
+          <span class="badge badge-lg mono">Istanbul</span>
+        </h3>
+        <div class="entry-date">Jul 2025 - Present</div>
+      </div>
+      <h4 class="entry-sub mono">Senior Backend Engineer &amp; Project Lead</h4>
+      <div class="entry-body mono">
+        <p>One of six project leads, each owning end-to-end delivery of a core banking module.</p>
+        <ul>
+          <li>Own the bill-payment and collections domain across 40+ billers, each served by a Java gateway bridging into per-biller PL/SQL where settlement, accounting, and daily reconciliation are posted.</li>
+          <li>Designed sync and async flows with retry handling so collections stay consistent under partial failures and timeouts.</li>
+          <li>Delivered bulk SWIFT payments: up to 1,000 transfers per batch with a dedicated batch execution layer.</li>
+          <li>Built the bank's corporate SFTP file-exchange infrastructure from scratch; adopted as the standard corporate transfer channel.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <span>Odeabank (Bank Audi)</span>
+          <span class="badge badge-lg mono">Istanbul</span>
+        </h3>
+        <div class="entry-date">Nov 2023 - Jul 2025</div>
+      </div>
+      <h4 class="entry-sub mono">Senior Backend Engineer, Platform Team</h4>
+      <div class="entry-body mono">
+        <p>Platform team owning cross-cutting backend services across all digital banking product lines.</p>
+        <ul>
+          <li>Designed a Redis caching layer for high-traffic mobile screens, cutting Cards screen load time by ~16x.</li>
+          <li>Built .NET Core APIs and microservices on consistent command–query separation across independently deployed domains.</li>
+          <li>Escalation point for production incidents across all domains; owned the CI/CD lifecycle through to production.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <span>Softtech (İş Bankası)</span>
+          <span class="badge badge-lg mono">Istanbul</span>
+        </h3>
+        <div class="entry-date">Feb 2022 - Nov 2023</div>
+      </div>
+      <h4 class="entry-sub mono">Senior Software Engineer</h4>
+      <div class="entry-body mono">
+        <p>Core systems of Türkiye İş Bankası, founded 1924.</p>
+        <ul>
+          <li>Shipped checkbook and safe-deposit products serving 25M+ customers across ~1,000 branches.</li>
+          <li>Worked a hybrid legacy stack — IBM DB2, COBOL, Java, C# — tracing failures through the bank's COBOL and MQ backbone.</li>
+          <li>Served scheduled 24-hour on-call rotations covering production batch jobs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <span>BTC Bilişim Hizmetleri</span>
+          <span class="badge badge-lg mono">Istanbul</span>
+        </h3>
+        <div class="entry-date">Dec 2018 - Feb 2022</div>
+      </div>
+      <h4 class="entry-sub mono">Software Engineer</h4>
+      <div class="entry-body mono">
+        <p>SAP business partner delivering enterprise software and consulting.</p>
+        <ul>
+          <li>Built CRM features on Spring Boot and JSF, and consulted across client projects in React, Angular, Vue, and .NET Core.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <span>iyi fikir interaktif teknolojiler</span>
+          <span class="badge badge-lg mono">Eskişehir</span>
+        </h3>
+        <div class="entry-date">Sep 2016 - Nov 2018</div>
+      </div>
+      <h4 class="entry-sub mono">Software Developer</h4>
+      <div class="entry-body mono">
+        <p>Where it started: full-stack web development across client projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Source -->
+  <section>
+    <h2>Open Source</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <a class="underline-hover" href="https://github.com/ygtalp/rawthink-mcp" target="_blank" rel="noopener">rawthink-mcp</a>
+        </h3>
+        <div class="repo mono">github.com/ygtalp/rawthink-mcp</div>
+      </div>
+      <div class="chips">
+        <span class="badge badge-sm mono">Python</span>
+        <span class="badge badge-sm mono">MCP</span>
+        <span class="badge badge-sm mono">Qdrant</span>
+        <span class="badge badge-sm mono">BGE-M3</span>
+        <span class="badge badge-sm mono">PyPI</span>
+      </div>
+      <div class="entry-body mono">
+        <p>Open-source MCP server giving AI coding agents persistent memory across sessions: hybrid retrieval (BGE-M3 dense + BM25 sparse, fused over Qdrant), a temporal knowledge graph with belief revision and epistemic typing, and 15 MCP tools.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <a class="underline-hover" href="https://github.com/ygtalp/banking-microservices-platform" target="_blank" rel="noopener">banking-microservices-platform</a>
+        </h3>
+        <div class="repo mono">github.com/ygtalp/banking-microservices-platform</div>
+      </div>
+      <div class="chips">
+        <span class="badge badge-sm mono">Java 21</span>
+        <span class="badge badge-sm mono">Spring Boot</span>
+        <span class="badge badge-sm mono">Kafka</span>
+        <span class="badge badge-sm mono">ISO 20022</span>
+        <span class="badge badge-sm mono">PostgreSQL</span>
+      </div>
+      <div class="entry-body mono">
+        <p>Distributed core banking system of 13 microservices: SAGA orchestration over Kafka, database-per-service, SEPA and SWIFT payments (ISO 20022), AML sanctions screening, and a full observability stack.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <a class="underline-hover" href="https://github.com/ygtalp/payment-service" target="_blank" rel="noopener">payment-service</a>
+        </h3>
+        <div class="repo mono">github.com/ygtalp/payment-service</div>
+      </div>
+      <div class="chips">
+        <span class="badge badge-sm mono">CQRS</span>
+        <span class="badge badge-sm mono">Redis</span>
+        <span class="badge badge-sm mono">PostgreSQL</span>
+        <span class="badge badge-sm mono">RabbitMQ</span>
+      </div>
+      <div class="entry-body mono">
+        <p>A payment microservice built around correctness under failure: dual-layer idempotency (Redis + PostgreSQL) preventing duplicate charges from timeouts and retries, with optimistic locking and automatic retry on version conflicts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section>
+    <h2>Writing</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">
+          <a class="underline-hover" href="https://dev.to/yigitaunal/your-ai-doesnt-remember-you-thats-about-to-matter-more-than-you-think-77k" target="_blank" rel="noopener">Your AI Doesn't Remember You</a>
+        </h3>
+        <div class="entry-date">Apr 2026</div>
+      </div>
+      <h4 class="entry-sub mono">dev.to</h4>
+      <div class="entry-body mono">
+        <p>Why persistent memory is becoming the layer that separates an assistant from a collaborator — and what it meant to independently arrive at the same architecture as Karpathy's LLM Wiki.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p class="mono">Want to talk? Send me an <a href="mailto:unal.yigitalp@gmail.com">email</a> and I'll get back to you.</p>
+  </section>
+
+</div>
+</main>
+</body>
+</html>
